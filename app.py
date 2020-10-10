@@ -19,7 +19,7 @@ def welcome():
 #@app.route('/predict',methods=["Get"])
 def predict_note(message):
    
-    prediction=text_model.predict([[message]])
+    prediction=text_model.predict([message])
     print(prediction)
     return prediction
 
